@@ -1,0 +1,113 @@
+\documentclass[professionalfont]{beamer}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{tikz}
+ 
+% usage: \tikzpic{<x percent>}{<y percent>}{<image size>}{<image name>}
+\newcommand*{\tikzpic}[4]{%
+\begin{tikzpicture}[remember picture,overlay]
+\node at (current page.south west) [xshift=#1\paperwidth,yshift=#2\paperheight] {\includegraphics[width=#3\linewidth]{#4}};
+\end{tikzpicture}%
+}
+
+\title[Gene expression inference with Deep Learning]{\textbf{\\Gene expression inference\\ with Deep Learning}}
+\author[A. Sessa]{\underline{Andrea Sessa}\\
+\vspace{2mm}
+{\small \href{mailto:andrea.sessa@mail.polimi.it}{\nolinkurl{andrea.sessa@mail.polimi.it}}}\\
+ \small{Yifei Chen, Yi Li, Rajiv Narayan, \\ Aravind Subramanian, Xiaohui Xie} \\
+ \small{Bioinformatics, 2016 \\ Volume 32, Issue 12, pages: 1832-1839}}
+\date{}
+
+\usetheme{POLIMI}
+
+\expandafter\def\expandafter\insertshorttitle\expandafter{\insertshorttitle\hfill\insertframenumber\,/\,\inserttotalframenumber}
+
+\begin{document}
+
+\begin{frame}[plain]
+\titlepage
+\end{frame}
+
+\begin{frame}{Table of contents}
+\tableofcontents
+\end{frame}
+
+\begin{frame}{block}
+\begin{block}{title}
+bla bla bla
+\end{block}
+\end{frame}
+
+\section{Introduction}
+
+\subsection{Motivations}
+\begin{frame}
+\frametitle{Motivations}
+\begin{itemize}
+\item 1
+\item 2
+\end{itemize}
+\end{frame}
+
+\subsection{Previous Works}
+\begin{frame}
+\frametitle{Previous Works}
+\end{frame}
+
+\subsection{Datasets}
+\begin{frame}
+\frametitle{Datasets}
+\end{frame}
+
+\section{Formalization}
+
+\subsection{Deep Learning Architecture}
+\begin{frame}
+\frametitle{Deep Learning Architecture}
+\begin{enumerate}[i)]
+\item 1
+\item 2
+\end{enumerate}
+\end{frame}
+
+\subsection{Linear Regression}
+\begin{frame}
+\frametitle{Linear Regression}
+\POLIMItitle{POLIMI Title}
+\end{frame}
+
+\subsection{KNN}
+\begin{frame}
+\frametitle{KNN}
+\POLIMItitle{POLIMI Title}
+\end{frame}
+
+\subsection{Datasets}
+\begin{frame}
+\frametitle{Datasets}
+\POLIMItitle{POLIMI Title}
+\end{frame}
+
+\subsection{D-GEX}
+\begin{frame}
+\frametitle{D-GEX}
+\POLIMItitle{POLIMI Title}
+\end{frame}
+
+\section{Results and Interpretation}
+
+\subsection{D-GEX Results}
+\begin{frame}
+\frametitle{D-GEX Results}
+\POLIMItitle{POLIMI Title}
+\end{frame}
+
+\subsection{Network Interpretation}
+\begin{frame}
+\frametitle{Network Interpretation}
+\POLIMItitle{POLIMI Title}
+\end{frame}
+\end{document}
