@@ -49,20 +49,41 @@
 	  \begin{itemize}
 	   \item A fundamental problem in molecular biology: Characterize gene expression pattern under certain biological states
 	   \item \textbf{Gene expression profiling} has been historically used as a tool to capture the gene expression patterns in response to \textbf{diseases}
+	   \item Unfortunately, whole-genome gene expression profiling is still \textbf{too expensive} to be used in a typical academic lab to
+		 generate a compendium over thousand of samples
+           \item Human genome: $\sim 21000$ genes!
 	  \end{itemize}
       \end{frame}
 
     \subsection{Previous Works}
       \begin{frame}
 	\frametitle{Previous Works}
-      \end{frame}
-
-    \subsection{Datasets}
-      \begin{frame}
-	\frametitle{Datasets}
+	  \begin{itemize}
+	   \item \textbf{Main idea}: The expression profile of genes are known to be \textbf{highly} correlated!  
+	   \item \textbf{C}onnectivity \textbf{MAP}: Creation of a large reference collection gene expression patterns of the human genome
+	   \item \textbf{LINCS}: PCA analysis over the CMAP data; only $\sim 1000$ genes of 21000 capture the 80\% of the variance!
+	     \begin{itemize}
+	      \item The chosen 1000 genes are called \textbf{landmark genes}
+	      \item The remaining part are called \textbf{target genes}
+	      \item Measure gene expression of the landmark genes under certain biological condition(low cost!)
+	      \item Infer the expression of the target genes from the landmark genes and other expression profile
+	      \item LINCS program currently use \textbf{linear regression} to infer the expression of the target genes
+	     \end{itemize}
+	 \end{itemize}
       \end{frame}
 
     \section{Formalization}
+      
+      \subsection{Problem Statement}
+	\begin{frame}
+	 \frametitle{Problem Statement}
+	 \begin{itemize}
+	  \item Computationally complex to infer the expression profiles of target genes based on landmark genes
+	  \item A large-scale multi-task machine learning problem!
+	  \item 
+	 \end{itemize}
+	\end{frame}
+
 
       \subsection{Deep Learning Architecture}
 	\begin{frame}

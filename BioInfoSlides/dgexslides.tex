@@ -72,20 +72,31 @@
 	 \end{itemize}
       \end{frame}
 
-    \subsection{Datasets}
-      \begin{frame}
-	\frametitle{Datasets}
-      \end{frame}
-
     \section{Formalization}
+      
+      \subsection{Problem Statement}
+	\begin{frame}
+	 \frametitle{Problem Statement}
+	 \begin{itemize}
+	  \item Computationally complex to infer the expression profiles of target genes based on landmark genes
+	  \item A large-scale multi-task machine learning problem!
+	  \item We need also to consider that the target dimension(21000) is significantly \textbf{greater} thant the feature dimension(1000)
+	  \begin{itemize}
+	    \item LINCS uses linear regression, high scalability but it ignores \textbf{non-linearity patterns} inside the data
+	    \item Others(\textit{Ye et al. 2006}) have tried to use kernel machines(ie. SVM), scalability problem!
+	    \item Seems natural to adopt \textbf{Deep Learning} approach, high scalability + high representability 
+	  \end{itemize}
+	 \end{itemize}
+	\end{frame}
+
 
       \subsection{Deep Learning Architecture}
 	\begin{frame}
+	  Idea: learn a \textbf{hierarchical} rappresentation of the data through multiple layers
 	  \frametitle{Deep Learning Architecture}
-	  \begin{enumerate}[i)]
-	    \item 1
-	    \item 2
-	  \end{enumerate}
+	  \begin{center}
+	    \includegraphics[scale=0.35]{deep_learning_net.jpg}
+	  \end{center}
 	\end{frame}
 
       \subsection{Linear Regression}
