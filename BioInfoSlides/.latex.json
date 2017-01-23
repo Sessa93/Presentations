@@ -1,0 +1,11 @@
+{
+  "projectPath": "/Users/andrea/Desktop/Dropbox/Appunti/Presentations/BioInfoSlides",
+  "title": "LaTeX-Plus Project",
+  "root": "dgexslides.tex",
+  "program": "pdflatex",
+  "latexmkOptions": "-bibtex -pdf -shell-escape",
+  "output": ".latex",
+  "openOutput": "true",
+  "postAction": "link",
+  "postPath": ""
+}
