@@ -1,0 +1,11 @@
+{
+  "projectPath": "/Users/andrea/Desktop/OptimizationPapers/slides",
+  "title": "LaTeX-Plus Project",
+  "root": "hessianfree.tex",
+  "program": "pdflatex",
+  "latexmkOptions": "-bibtex -pdf -shell-escape",
+  "output": ".latex",
+  "openOutput": "true",
+  "postAction": "link",
+  "postPath": ""
+}
